@@ -1,12 +1,10 @@
-git --version  || (Verifica a versão do git)
-git init  || (Inicia um repositório vazioapasta atual)
-git config --global user.name "Luis Gustavo Santos de Oliveira Junior"  || (Criar usuario global)
-git config --global user.email "gustavojr.lg.10@gmail.com"  || (Criar email global)
-git status  || (Verifica tudo que não foi salvo)
-git add .  || (Colocar os arquivos na área de transferencia)
-git commit -m "Mensagem" || (Dizer uma mensagem para identificar o Commit)
-git log  || (Mostra todos o Log dos Commits realizados)
-git remote add origin https://github.com/Gustavo1701/topicosespeciais.git  || (Vincula local ao repositorio do git)
-git push -u origin master  || (Fazer o commit pela primeira vez)
- 
-
+git --version = verifica a versão do git.
+git nit = inicia um repositorio vazio na pasta atual
+git config --global user.name "Andrei Santos" = Cria usuário do git
+git config --global user.email "andreisantos153@gmail.com" = cria email do usuario do git
+git status = verifica tudo que nao foi salvo no git
+git add . = colocar os arquivos na area de transferencia
+git commit -m "mensagem" = dizer uma mensagem para identificar o commit
+git log = mostra todo o log dos commits realizados
+git remote add origin \linkdorepositorio = vincula a pasta local ao repositorio git
+git push -u origin master = fazer commit pela primeira vez
