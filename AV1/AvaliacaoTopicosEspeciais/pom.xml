@@ -10,7 +10,7 @@
 	<packaging>jar</packaging>
 
 	<name>AvaliacaoTopicosEspeciais</name>
-	<description>Avaliação Topicos Especiais ADS-FVS</description>
+	<description>Avaliação de tópicos especiais ADS-FVS</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -53,6 +53,7 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
+
 
 	<build>
 		<plugins>
