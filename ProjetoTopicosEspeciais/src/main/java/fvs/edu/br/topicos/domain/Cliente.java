@@ -1,11 +1,18 @@
 package fvs.edu.br.topicos.domain;
 
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
 
+import javax.persistence.CollectionTable;
+import javax.persistence.ElementCollection;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 
 import fvs.edu.br.topicos.enums.TipoCliente;
 
@@ -21,8 +28,31 @@ public class Cliente implements Serializable {
 	private String cpfOuCnpj;
 	private TipoCliente tipo;
 	
+	@OneToMany
+	private List<Endereco> endereco = new ArrayList<>();
+	
+	@ElementCollection
+	@CollectionTable(name="TELEFONE")
+	private Set<String> telefone = new HashSet<>();
+	
 	public Cliente () {
 		
+	}
+
+	public List<Endereco> getEndereco() {
+		return endereco;
+	}
+
+	public void setEndereco(List<Endereco> endereco) {
+		this.endereco = endereco;
+	}
+
+	public Set<String> getTelefone() {
+		return telefone;
+	}
+
+	public void setTelefone(Set<String> telefone) {
+		this.telefone = telefone;
 	}
 
 	public Cliente(Integer id, String nome, String email, String cpfOuCnpj, TipoCliente tipo) {
