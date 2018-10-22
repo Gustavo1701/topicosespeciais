@@ -12,7 +12,7 @@ import javax.persistence.ManyToOne;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @Entity
-public class Endereco implements Serializable {
+public class Endereco implements Serializable{
 	private static final long serialVersionUID = 1L;
 	
 	@Id
@@ -33,7 +33,7 @@ public class Endereco implements Serializable {
 	@JoinColumn(name="cliente_id")
 	private Cliente cliente;
 	
-	public Endereco (){
+	public Endereco() {
 		
 	}
 
@@ -138,7 +138,11 @@ public class Endereco implements Serializable {
 			return false;
 		return true;
 	}
-
 	
-
+	
+	
+	
+	
+	
+	
 }
